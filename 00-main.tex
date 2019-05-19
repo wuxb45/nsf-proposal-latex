@@ -7,17 +7,17 @@
 %
 % This version maintained/modified by: Jeremy A. Gibbs, Univ. of Utah
 %
-% This template is free source code. It comes without any warranty, to 
-% the extent permitted by applicable law. You can redistribute it and/or 
-% modify it under the terms of the Do What The Fuck You Want To Public 
-% License, Version 2, as published by Sam Hocevar. See 
+% This template is free source code. It comes without any warranty, to
+% the extent permitted by applicable law. You can redistribute it and/or
+% modify it under the terms of the Do What The Fuck You Want To Public
+% License, Version 2, as published by Sam Hocevar. See
 % http://www.wtfpl.net for more details.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Package calls and title
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{header}
+\include{01-header}
 \renewcommand{\title}{\noindent {{\bf Your Cool Title}}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -28,8 +28,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % SINGLE PAGE DOCUMENTS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{collab_person1}
-\include{collab_person2}
+\include{10-person}
+%\include{11-person}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % A - COVER SHEET
@@ -46,7 +46,7 @@
 \setcounter{page}{1}
 \renewcommand{\thepage} {B--\arabic{page}}
 \newpage
-\include{b-summary}
+\include{20-summary}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % C - TABLE OF CONTENTS
@@ -60,7 +60,7 @@
 \newpage
 \pagenumbering{arabic}
 \renewcommand{\thepage}{D--\arabic{page}}
-\include{d-project}
+\include{30-project}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % E - REFERENCES CITED
@@ -68,8 +68,8 @@
 \newpage
 \pagenumbering{arabic}
 \renewcommand{\thepage}{E--\arabic{page}}
-\bibliographystyle{ametsoc}
-\bibliography{references}
+\bibliographystyle{45-ametsoc}
+\bibliography{46-ref}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % F - BIOGRAPHICAL SKETCHES
@@ -77,8 +77,8 @@
 \newpage
 \pagenumbering{arabic}
 \renewcommand{\thepage} {F--\arabic{page}}
-\include{f-bio_person1}
-\include{f-bio_person2}
+\include{50-bio}
+%\include{51-bio}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % G - BUDGET JUSTIFICATION
@@ -88,7 +88,7 @@
 \newpage
 \pagenumbering{arabic}
 \renewcommand{\thepage} {G--\arabic{page}}
-\include{g-budget}
+\include{60-budget}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % H - CURRENT AND PENDING SUPPORT
@@ -96,8 +96,8 @@
 \newpage
 \pagenumbering{arabic}
 \renewcommand{\thepage} {H--\arabic{page}}
-\include{h-support_person1}
-\include{h-support_person2}
+\include{70-support}
+%\include{71-support}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % I - FACILITIES & RESOURCES
@@ -105,7 +105,7 @@
 \newpage
 \pagenumbering{arabic}
 \renewcommand{\thepage} {I--\arabic{page}}
-\include{i-facilities}
+\include{80-fac}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % J - DATA MANAGEMENT PLAN
@@ -113,7 +113,7 @@
 \newpage
 \pagenumbering{arabic}
 \renewcommand{\thepage} {J--\arabic{page}}
-\include{j-data}
+\include{81-data}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % J - POSTDOC MENTORING PLAN
